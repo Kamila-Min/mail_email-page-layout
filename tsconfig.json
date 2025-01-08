@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "commonjs",
+        "declaration": true,
+        "baseUrl": "./src/js/webpack-svgstore",
+        "outDir": "./src/js/webpack-svgstore/dist",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true
+    }
+}

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Почта Mail</title>
+</head>
+
+<body class="mail-general">
+<header class="mail-header">
+    <div class="mail-header__left-block">
+        <div class="mail-header__logo">
+            <a href="#" class="">
+                <img src="./assets/icons/mail-logo.svg" alt="mail" height="30" width="auto"/>
+            </a>
+        </div>
+        <nav class="mail-header__nav">
+            <ul class="mail-header__nav list">
+                <li class="list__nav-item">
+                    <a href="#" class="list__nav-item link">
+                        Главная
+                    </a>
+                </li>
+                <li class="list__nav-item">
+                    <a href="#" class="list__nav-item link">
+                        Почта
+                    </a>
+                </li>
+                <li class="list__nav-item">
+                    <a href="#" class="list__nav-item link">
+                        Облако
+                    </a>
+                </li>
+                <li class="list__nav-item">
+                    <a href="#" class="list__nav-item link">
+                        Календарь
+                    </a>
+                </li>
+                <li class="list__nav-item">
+                    <a href="#" class="list__nav-item link">
+                        Заметки
+                    </a>
+                </li>
+                <li class="list__nav-item">
+                    <a href="#" class="list__nav-item link">
+                        Задачи
+                    </a>
+                </li>
+                <li class="list__nav-item">
+                    <a href="#" class="list__nav-item link">
+                        Mail Space
+                    </a>
+                </li>
+                <li class="list__nav-item">
+                    <a href="#" class="list__nav-item link">
+                        Контакты
+                    </a>
+                </li>
+                <li class="list__nav-item">
+                    <a href="#" class="list__nav-item link">
+                        Новости
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="mail-header__nav text-flex">
+                <span class="link">Все проекты</span>
+                <img
+                    class="img-link"
+                    src="./assets/icons/expand-icon.svg"
+                    alt="expand"
+                    height="10"
+                    width="10"
+                />
+            </a>
+        </nav>
+    </div>
+    <div class="mail-header__right-block">
+        <form action="" method="get" class="mail-header__right-block form">
+            <div class="form__search">
+                <label for="search" class="form__search-icon-wrapper">
+                    <img
+                        class="img-link"
+                        src="./assets/icons/search-icon.svg"
+                        alt="search"
+                        height="20"
+                        width="20"
+                    />
+                </label>
+                <input class="form__search-input" type="text" id="search" name="request" placeholder="Поиск по почте" />
+            </div>
+        </form>
+        <div class="mail-header__right-block notes">
+            <a href="#" class="notes__wrapper text-flex">
+                <div class="notes__wrapper-icon">
+                    <img
+                        class="img-link"
+                        src="./assets/icons/notes-icon.svg"
+                        alt="note-icon"
+                        height="20"
+                        width="20"
+                    />
+                </div>
+                <span class="link">Ваши заметки</span>
+            </a>
+        </div>
+        <div class="mail-header__right-block avatar">
+<!--            <div class="avatar__wrapper">-->
+<!--                <img-->
+<!--                    class="img-link__avatar"-->
+<!--                    src="./assets/images/avatar.webp"-->
+<!--                    alt="avatar"-->
+<!--                    height="20"-->
+<!--                    width="20"-->
+<!--                />-->
+<!--            </div>-->
+        </div>
+    </div>
+</header>
+
+<main class="mail-main">
+    <section class="mail-menu-wrapper">
+        <nav class="mail-menu-wrapper__nav">
+            <div class="mail-menu-wrapper__nav-top">
+                <a href="#" class="mail-menu-wrapper__nav-top-item text-flex">
+                    <span class="mail-menu-wrapper__nav-text link">Написать письмо</span>
+                    <img
+                        class="mail-menu-wrapper__nav-icon img-link"
+                        src="./assets/icons/expand-icon.svg"
+                        alt="expand"
+                        height="10"
+                        width="10"
+                    />
+                </a>
+                <ul class="mail-menu-wrapper__nav list-menu">
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__item-link text-flex">
+                            <img
+                                class="list-menu__item-link-icon img-link"
+                                src="./assets/icons/"
+                                alt=""
+                                height="20"
+                                width="20"
+                            />
+                            <span class="list-menu__item-link-text link">Входящие</span>
+                        </a>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__item-link text-flex">
+                            <img
+                                class="list-menu__item-link-icon img-link"
+                                src="./assets/icons/"
+                                alt=""
+                                height="20"
+                                width="20"
+                            />
+                            <span class="list-menu__item-link-text link">Unwanted</span>
+                        </a>
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__item-link text-flex">
+                            <img
+                                class="list-menu__item-link-icon img-link"
+                                src="./assets/icons/"
+                                alt=""
+                                height="20"
+                                width="20"
+                            />
+                            <span class="list-menu__item-link-text link">Отправленные</span>
+                        </a>
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__item-link text-flex">
+                            <img
+                                class="list-menu__item-link-icon img-link"
+                                src="./assets/icons/"
+                                alt=""
+                                height="20"
+                                width="20"
+                            />
+                            <span class="list-menu__item-link-text link">Черновики</span>
+                        </a>
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__item-link text-flex">
+                            <img
+                                class="list-menu__item-link-icon img-link"
+                                src="./assets/icons/"
+                                alt=""
+                                height="20"
+                                width="20"
+                            />
+                            <span class="list-menu__item-link-text link">Спам</span>
+                        </a>
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__item-link text-flex">
+                            <img
+                                class="list-menu__item-link-icon img-link"
+                                src="./assets/icons/"
+                                alt=""
+                                height="20"
+                                width="20"
+                            />
+                            <span class="list-menu__item-link-text link">Корзина</span>
+                        </a>
+                    </li>
+                    <li class="list-menu__item">
+                        <a href="#" class="list-menu__item-link text-flex">
+                            <img
+                                class="list-menu__item-link-icon img-link"
+                                src="./assets/icons/"
+                                alt=""
+                                height="20"
+                                width="20"
+                            />
+                            <span class="list-menu__item-link-text link">Новая папка</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="mail-menu-wrapper__nav-bottom text-flex">
+                <img
+                    class="mail-menu-wrapper__nav-bottom-icon img-link"
+                    src="./assets/icons/.svg"
+                    alt=""
+                    height="20"
+                    width="20"
+                />
+                <span class="mail-menu-wrapper__nav-bottom-text link">Новости</span>
+            </a>
+        </nav>
+    </section>
+    <section class="mail-emails-wrapper">
+        <div class="mail-emails-wrapper__top-block">
+            <div class="mail-emails-wrapper__top-block-left left-content">
+                <a href="#" class="text-flex">
+                    <img
+                        class="img-link"
+                        src="./assets/icons/"
+                        alt=""
+                        height="20"
+                        width="20"
+                    />
+                    <span class="link">Выделить все</span>
+                </a>
+                <a href="#" class="text-flex">
+                    <img
+                        class="img-link"
+                        src="./assets/icons/"
+                        alt=""
+                        height="20"
+                        width="20"
+                    />
+                    <span class="link">Отметить все прочитанными</span>
+                </a>
+            </div>
+            <div class="mail-emails-wrapper__top-block-right right-content">
+                <a href="#" class="right-content text-flex">
+                    <span class="link">Фильтр</span>
+                    <img
+                        class="img-link"
+                        src="./assets/icons/expand-icon.svg"
+                        alt="expand"
+                        height="10"
+                        width="10"
+                    />
+                </a>
+            </div>
+        </div>
+        <div class="mail-emails-wrapper__mobile-block">
+            <div class="mail-emails-wrapper__mobile-block-inside emails-window-content">
+                <div class="emails-window-content__date-block">
+                    <a href="#" class="link">Сегодня</a>
+                </div>
+                <div class="emails-window-content__list-letters-wrapper">
+                    <ul class="emails-window-content__list-letters-wrapper list-menu">
+                        <li class="list-menu__letter letter-content">
+                            <div class="letter-content__left-block">
+                                <img
+                                    class="img-link"
+                                    src="./assets/icons/circle.svg"
+                                    alt=""
+                                    height="20"
+                                    width="20"
+                                />
+                                <img
+                                    class="avatar img-link"
+                                    src="./assets/icons/"
+                                    alt=""
+                                    height=""
+                                    width=""
+                                />
+                            </div>
+                            <div class="letter-content__right-block">
+                                <div class="letter-content__right-block-text">
+                                    <div class="letter-content__right-block-text-letter">
+                                        <a href="#" class="letter-content__right-block-text-letter-sender link">Золотое Яблоко</a>
+                                        <div class="letter-content__right-block-text-letter-inside">
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-title link">Распродажа закончится завтра</a>
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-main link">Успей урвать выгоду на финальной распродаже лета и запастись любимыми продуктами!</a>
+                                        </div>
+                                        <a href="#" class="letter-content__right-block-text-letter-date link">15:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="emails-window-content__list-letters-wrapper-divider">
+                            <div class="divider"></div>
+                        </div>
+                        <li class="list-menu__letter letter-content">
+                            <div class="letter-content__left-block">
+                                <img
+                                    class="img-link"
+                                    src="./assets/icons/circle.svg"
+                                    alt=""
+                                    height="20"
+                                    width="20"
+                                />
+                                <img
+                                    class="avatar img-link"
+                                    src="./assets/icons/point-icon.svg"
+                                    alt=""
+                                    height=""
+                                    width=""
+                                />
+                            </div>
+                            <div class="letter-content__right-block">
+                                <div class="letter-content__right-block-text">
+                                    <div class="letter-content__right-block-text-letter">
+                                        <a href="#" class="letter-content__right-block-text-letter-sender link">Золотое Яблоко</a>
+                                        <div class="letter-content__right-block-text-letter-inside">
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-title link">Распродажа закончится завтра</a>
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-main link">Успей урвать выгоду на финальной распродаже лета и запастись любимыми продуктами!</a>
+                                        </div>
+                                        <a href="#" class="letter-content__right-block-text-letter-date link">15:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="emails-window-content__list-letters-wrapper-divider">
+                            <div class="divider"></div>
+                        </div>
+                        <li class="list-menu__letter letter-content">
+                            <div class="letter-content__left-block">
+                                <img
+                                    class="img-link"
+                                    src="./assets/icons/circle.svg"
+                                    alt=""
+                                    height="20"
+                                    width="20"
+                                />
+                                <img
+                                    class="avatar img-link"
+                                    src="./assets/icons/point-icon.svg"
+                                    alt=""
+                                    height=""
+                                    width=""
+                                />
+                            </div>
+                            <div class="letter-content__right-block">
+                                <div class="letter-content__right-block-text">
+                                    <div class="letter-content__right-block-text-letter">
+                                        <a href="#" class="letter-content__right-block-text-letter-sender link">Золотое Яблоко</a>
+                                        <div class="letter-content__right-block-text-letter-inside">
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-title link">Распродажа закончится завтра</a>
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-main link">Успей урвать выгоду на финальной распродаже лета и запастись любимыми продуктами!</a>
+                                        </div>
+                                        <a href="#" class="letter-content__right-block-text-letter-date link">15:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="emails-window-content__list-letters-wrapper-divider">
+                            <div class="divider"></div>
+                        </div>
+                        <li class="list-menu__letter letter-content">
+                            <div class="letter-content__left-block">
+                                <img
+                                    class="img-link"
+                                    src="./assets/icons/circle.svg"
+                                    alt=""
+                                    height="20"
+                                    width="20"
+                                />
+                                <img
+                                    class="avatar img-link"
+                                    src="./assets/icons/point-icon.svg"
+                                    alt=""
+                                    height=""
+                                    width=""
+                                />
+                            </div>
+                            <div class="letter-content__right-block">
+                                <div class="letter-content__right-block-text">
+                                    <div class="letter-content__right-block-text-letter">
+                                        <a href="#" class="letter-content__right-block-text-letter-sender link">Золотое Яблоко</a>
+                                        <div class="letter-content__right-block-text-letter-inside">
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-title link">Распродажа закончится завтра</a>
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-main link">Успей урвать выгоду на финальной распродаже лета и запастись любимыми продуктами!</a>
+                                        </div>
+                                        <a href="#" class="letter-content__right-block-text-letter-date link">15:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="emails-window-content__list-letters-wrapper-divider">
+                            <div class="divider"></div>
+                        </div>
+                        <li class="list-menu__letter letter-content">
+                            <div class="letter-content__left-block">
+                                <img
+                                    class="img-link"
+                                    src="./assets/icons/circle.svg"
+                                    alt=""
+                                    height="20"
+                                    width="20"
+                                />
+                                <img
+                                    class="avatar img-link"
+                                    src="./assets/icons/point-icon.svg"
+                                    alt=""
+                                    height=""
+                                    width=""
+                                />
+                            </div>
+                            <div class="letter-content__right-block">
+                                <div class="letter-content__right-block-text">
+                                    <div class="letter-content__right-block-text-letter">
+                                        <a href="#" class="letter-content__right-block-text-letter-sender link">Золотое Яблоко</a>
+                                        <div class="letter-content__right-block-text-letter-inside">
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-title link">Распродажа закончится завтра</a>
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-main link">Успей урвать выгоду на финальной распродаже лета и запастись любимыми продуктами!</a>
+                                        </div>
+                                        <a href="#" class="letter-content__right-block-text-letter-date link">15:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="emails-window-content__list-letters-wrapper-divider">
+                            <div class="divider"></div>
+                        </div>
+                        <li class="list-menu__letter letter-content">
+                            <div class="letter-content__left-block">
+                                <img
+                                    class="img-link"
+                                    src="./assets/icons/circle.svg"
+                                    alt=""
+                                    height="20"
+                                    width="20"
+                                />
+                                <img
+                                    class="avatar img-link"
+                                    src="./assets/icons/point-icon.svg"
+                                    alt=""
+                                    height=""
+                                    width=""
+                                />
+                            </div>
+                            <div class="letter-content__right-block">
+                                <div class="letter-content__right-block-text">
+                                    <div class="letter-content__right-block-text-letter">
+                                        <a href="#" class="letter-content__right-block-text-letter-sender link">Золотое Яблоко</a>
+                                        <div class="letter-content__right-block-text-letter-inside">
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-title link">Распродажа закончится завтра</a>
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-main link">Успей урвать выгоду на финальной распродаже лета и запастись любимыми продуктами!</a>
+                                        </div>
+                                        <a href="#" class="letter-content__right-block-text-letter-date link">15:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="emails-window-content__list-letters-wrapper-divider">
+                            <div class="divider"></div>
+                        </div>
+                        <li class="list-menu__letter letter-content">
+                            <div class="letter-content__left-block">
+                                <img
+                                    class="img-link"
+                                    src="./assets/icons/circle.svg"
+                                    alt=""
+                                    height="20"
+                                    width="20"
+                                />
+                                <img
+                                    class="avatar img-link"
+                                    src="./assets/icons/point-icon.svg"
+                                    alt=""
+                                    height=""
+                                    width=""
+                                />
+                            </div>
+                            <div class="letter-content__right-block">
+                                <div class="letter-content__right-block-text">
+                                    <div class="letter-content__right-block-text-letter">
+                                        <a href="#" class="letter-content__right-block-text-letter-sender link">Золотое Яблоко</a>
+                                        <div class="letter-content__right-block-text-letter-inside">
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-title link">Распродажа закончится завтра</a>
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-main link">Успей урвать выгоду на финальной распродаже лета и запастись любимыми продуктами!</a>
+                                        </div>
+                                        <a href="#" class="letter-content__right-block-text-letter-date link">15:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="emails-window-content__list-letters-wrapper-divider">
+                            <div class="divider"></div>
+                        </div>
+                        <li class="list-menu__letter letter-content">
+                            <div class="letter-content__left-block">
+                                <img
+                                    class="img-link"
+                                    src="./assets/icons/circle.svg"
+                                    alt=""
+                                    height="20"
+                                    width="20"
+                                />
+                                <img
+                                    class="avatar img-link"
+                                    src="./assets/icons/point-icon.svg"
+                                    alt=""
+                                    height=""
+                                    width=""
+                                />
+                            </div>
+                            <div class="letter-content__right-block">
+                                <div class="letter-content__right-block-text">
+                                    <div class="letter-content__right-block-text-letter">
+                                        <a href="#" class="letter-content__right-block-text-letter-sender link">Золотое Яблоко</a>
+                                        <div class="letter-content__right-block-text-letter-inside">
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-title link">Распродажа закончится завтра</a>
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-main link">Успей урвать выгоду на финальной распродаже лета и запастись любимыми продуктами!</a>
+                                        </div>
+                                        <a href="#" class="letter-content__right-block-text-letter-date link">15:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="emails-window-content__list-letters-wrapper-divider">
+                            <div class="divider"></div>
+                        </div>
+                        <li class="list-menu__letter letter-content">
+                            <div class="letter-content__left-block">
+                                <img
+                                    class="img-link"
+                                    src="./assets/icons/circle.svg"
+                                    alt=""
+                                    height="20"
+                                    width="20"
+                                />
+                                <img
+                                    class="avatar img-link"
+                                    src="./assets/icons/point-icon.svg"
+                                    alt=""
+                                    height=""
+                                    width=""
+                                />
+                            </div>
+                            <div class="letter-content__right-block">
+                                <div class="letter-content__right-block-text">
+                                    <div class="letter-content__right-block-text-letter">
+                                        <a href="#" class="letter-content__right-block-text-letter-sender link">Золотое Яблоко</a>
+                                        <div class="letter-content__right-block-text-letter-inside">
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-title link">Распродажа закончится завтра</a>
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-main link">Успей урвать выгоду на финальной распродаже лета и запастись любимыми продуктами!</a>
+                                        </div>
+                                        <a href="#" class="letter-content__right-block-text-letter-date link">15:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="emails-window-content__list-letters-wrapper-divider">
+                            <div class="divider"></div>
+                        </div>
+                        <li class="list-menu__letter letter-content">
+                            <div class="letter-content__left-block">
+                                <img
+                                    class="img-link"
+                                    src="./assets/icons/circle.svg"
+                                    alt=""
+                                    height="20"
+                                    width="20"
+                                />
+                                <img
+                                    class="avatar img-link"
+                                    src="./assets/icons/point-icon.svg"
+                                    alt=""
+                                    height=""
+                                    width=""
+                                />
+                            </div>
+                            <div class="letter-content__right-block">
+                                <div class="letter-content__right-block-text">
+                                    <div class="letter-content__right-block-text-letter">
+                                        <a href="#" class="letter-content__right-block-text-letter-sender link">Золотое Яблоко</a>
+                                        <div class="letter-content__right-block-text-letter-inside">
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-title link">Распродажа закончится завтра</a>
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-main link">Успей урвать выгоду на финальной распродаже лета и запастись любимыми продуктами!</a>
+                                        </div>
+                                        <a href="#" class="letter-content__right-block-text-letter-date link">15:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="emails-window-content__list-letters-wrapper-divider">
+                            <div class="divider"></div>
+                        </div>
+                        <li class="list-menu__letter letter-content">
+                            <div class="letter-content__left-block">
+                                <img
+                                    class="img-link"
+                                    src="./assets/icons/circle.svg"
+                                    alt=""
+                                    height="20"
+                                    width="20"
+                                />
+                                <img
+                                    class="avatar img-link"
+                                    src="./assets/icons/point-icon.svg"
+                                    alt=""
+                                    height=""
+                                    width=""
+                                />
+                            </div>
+                            <div class="letter-content__right-block">
+                                <div class="letter-content__right-block-text">
+                                    <div class="letter-content__right-block-text-letter">
+                                        <a href="#" class="letter-content__right-block-text-letter-sender link">Золотое Яблоко</a>
+                                        <div class="letter-content__right-block-text-letter-inside">
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-title link">Распродажа закончится завтра</a>
+                                            <a href="#" class="letter-content__right-block-text-letter-inside-main link">Успей урвать выгоду на финальной распродаже лета и запастись любимыми продуктами!</a>
+                                        </div>
+                                        <a href="#" class="letter-content__right-block-text-letter-date link">15:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="emails-window-content__list-letters-wrapper-divider">
+                            <div class="divider"></div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mail-commercial-wrapper">
+        <a href="#" class="mail-commercial-wrapper__item-text text-flex">
+            <span class="link">Убрать рекламу</span>
+        </a>
+        <a href="#" class="mail-commercial-wrapper__item">
+            <img
+                class="img-link"
+                src="./assets/images/picture.webp"
+                alt="first-picture"
+                height=""
+                width=""
+            />
+        </a>
+        <a href="#" class="mail-commercial-wrapper__item">
+            <img
+                class="img-link"
+                src="./assets/images/"
+                alt="second-picture"
+                height=""
+                width=""
+            />
+        </a>
+    </section>
+</main>
+
+
+</body>
+</html>

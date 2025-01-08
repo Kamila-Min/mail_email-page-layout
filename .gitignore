@@ -1,0 +1,54 @@
+#Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ
+.idea
+*.ipr
+*.iml
+*.iws
+
+# NetBeans
+nb-configuration.xml
+
+# Visual Studio Code
+.vscode
+.factorypath
+
+# OSX
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+
+# patch
+*.orig
+*.rej
+
+### Project Specific ###
+node_modules
+build
+dist
+/portal-application/*.log
+node
+npm-cache
+etc
+git.properties
+temporary-files
+
+#compiled css files from less
+/src/styles/index.css
+/src/styles/*.css.map
+/src/styles/components/*.css
+/src/styles/components/*.css.map
+/src/styles/common/*.css
+/src/styles/common/*.css.map

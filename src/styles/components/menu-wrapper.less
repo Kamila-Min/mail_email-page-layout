@@ -1,0 +1,93 @@
+@import "../common/fonts.less";
+@import "../common/font-vars.less";
+@import "../common/common.less";
+@import "../common/palette.less";
+@import "../common/mixins.less";
+@import "../common/sizes.less";
+
+.mail-menu-wrapper {
+  position: relative;
+  display: flex;
+  flex-shrink: 1;
+  margin-left: 10px;
+  height: 100%;
+  max-width: 200px;
+  min-width: 150px;
+  margin-right: 20px;
+
+  &__nav {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 95%;
+  }
+
+  &__nav-top-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    border: 1px solid @border-color;
+    background-color: @white;
+    width: 100%;
+    height: 36px;
+    transition: background-color 0.3s;
+  }
+
+  &__nav-top-item:hover {
+    background-color: @background-nav-list-item;
+  }
+
+  &__nav-text {
+    align-items: center;
+    padding: 0 5%;
+  }
+
+  &__nav-icon {
+    background-color: @white;
+    padding: 0 5%;
+    height: 100%;
+    width: 10%;
+    border-radius: 0 7px 7px 0;
+    border: 1px solid @border-color;
+    transition: background-color 0.3s;
+  }
+
+  &__nav-icon:hover {
+    background-color: @background-nav-list-item;
+  }
+
+  &__nav-bottom {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    border-radius: 7px;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  &__nav-bottom:hover {
+    background-color: @background-nav-list-item;
+  }
+
+  &__nav-bottom-icon {
+    margin-right: 5px;
+  }
+
+}
+
+
+
+
+
+

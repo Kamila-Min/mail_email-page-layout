@@ -1,0 +1,35 @@
+@import "../common/fonts.less";
+@import "../common/font-vars.less";
+@import "../common/common.less";
+@import "../common/palette.less";
+@import "../common/mixins.less";
+@import "../common/sizes.less";
+
+.mail-commercial-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-left: 10px;
+  width: 20%;
+  min-width: 200px;
+  height: 100%;
+
+  &__item-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    background-color: @background-commercial-text-item;
+    width: 100%;
+    height: 36px;
+  }
+
+  &__item {
+    border-radius: 10px;
+    height: 50%;
+    width: 100%;
+  }
+}

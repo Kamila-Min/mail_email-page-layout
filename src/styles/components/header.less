@@ -1,0 +1,48 @@
+@import "../common/fonts.less";
+@import "../common/font-vars.less";
+@import "../common/common.less";
+@import "../common/palette.less";
+@import "../common/mixins.less";
+@import "../common/sizes.less";
+
+.mail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+
+  &__left-block {
+    display: flex;
+    max-width: 80%;
+  }
+
+  &__logo {
+    display: flex;
+    margin-right: 5px;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    padding: 0 12px;
+    max-width: 90%;
+  }
+
+  &__right-block {
+    display: flex;
+    margin-right: 5px;
+    column-gap: 5px;
+  }
+
+
+}
+
+
+
+

@@ -1,0 +1,86 @@
+@import "../common/fonts.less";
+@import "../common/font-vars.less";
+@import "../common/common.less";
+@import "../common/palette.less";
+@import "../common/mixins.less";
+@import "../common/sizes.less";
+
+.letter-content {
+  display: flex;
+  justify-content: space-between;
+  //gap: 10px;
+  //width: 100%;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__left-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    //width: 10%;
+    padding: 0;
+    gap: 10px;
+    //margin-right: 10%;
+  }
+
+  &__right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  &__right-block-text-letter {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__right-block-text-letter-sender {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    min-width: 20%;
+    max-width: 30%;
+  }
+
+  &__right-block-text-letter-inside {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    gap: 10px;
+  }
+
+  &__right-block-text-letter-inside-title {
+    display: flex;
+    //width: 100%;
+    //margin-right: 10px;
+  }
+
+  &__right-block-text-letter-inside-main {
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+  }
+
+  &__right-block-text-letter-date {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+  }
+
+  &__divider-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 80%;
+    padding: 10px 0;
+  }
+
+
+}
